@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     //////////////////////////////////////////////////////
     // Configuring HTTP:
     httpLayer.setClientRequest("localhost","/");
-    httpLayer.response().content->setStreamableOutput(&output);
+    httpLayer.serverResponse.content.setStreamableObj(&output);
     //////////////////////////////////////////////////////
 
     // Write the HTTP request.

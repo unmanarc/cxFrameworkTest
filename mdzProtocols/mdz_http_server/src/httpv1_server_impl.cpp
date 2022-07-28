@@ -1,6 +1,7 @@
 #include "httpv1_server_impl.h"
 #include <stdio.h>
 
+using namespace Mantids::Protocols;
 using namespace Mantids::Protocols::HTTP;
 
 HTTPV1_Server_Impl::HTTPV1_Server_Impl(Mantids::Memory::Streams::StreamableObject *sock) : HTTPv1_Server(sock)
@@ -11,29 +12,30 @@ HTTPV1_Server_Impl::~HTTPV1_Server_Impl()
 {
 }
 
-bool HTTPV1_Server_Impl::processClientURI()
+bool HTTPV1_Server_Impl::procHTTPClientURI()
 {
     return true;
 }
 
-bool HTTPV1_Server_Impl::processClientOptions()
+bool HTTPV1_Server_Impl::procHTTPClientHeaders()
 {
     return true;
 }
 
-Response::Status::eCode HTTPV1_Server_Impl::processclientRequest()
+Status::eRetCode HTTPV1_Server_Impl::procHTTPClientContent()
 {    
-    response().content->getStreamableOuput()->strPrintf("<h1>Welcome to my first webserver</h1><br>\n");
+    serverResponse.content.writer()->strPrintf("<h1>Welcome to my first webserver</h1><br>\n");
 
-    response().content->getStreamableOuput()->strPrintf("<b>INIT</b><br>\n");
-    response().content->getStreamableOuput()->strPrintf("Version: %s<br>\n",
-                                                        request().request->getHTTPVersion()->getHTTPVersionString().c_str());
-    response().content->getStreamableOuput()->strPrintf("Resource: %s<br>\n",
-                                                        request().request->getURI().c_str());
-    response().content->getStreamableOuput()->strPrintf("Virtual Host: %s<br>\n",
-                                                        getRequestVirtualHost().c_str());
+    serverResponse.content.writer()->strPrintf("<b>INIT</b><br>\n");
+    serverResponse.content.writer()->strPrintf("Version: %s<br>\n",
+                                                        clientRequest.requestLine.getHTTPVersion()->getHTTPVersionString().c_str());
+    serverResponse.content.writer()->strPrintf("Resource: %s<br>\n",
+                                                        clientRequest.requestLine.getURI().c_str());
+    serverResponse.content.writer()->strPrintf("Virtual Host: %s<br>\n",
+                                                        clientRequest.virtualHost.c_str()
+                                                        );
 
-    response().content->getStreamableOuput()->strPrintf("<b>END</b><br>\n");
+    serverResponse.content.writer()->strPrintf("<b>END</b><br>\n");
 
-    return Response::Status::eCode::S_200_OK;
+    return HTTP::Status::S_200_OK;
 }

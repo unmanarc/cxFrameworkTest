@@ -10,10 +10,10 @@ public:
     ~HTTPV1_Server_Impl();
 
 protected:
-    bool processClientURI();
-    bool processClientOptions();
+    bool procHTTPClientURI();
+    bool procHTTPClientHeaders();
 
-    Mantids::Protocols::HTTP::Response::Status::eCode processclientRequest();
+    Mantids::Protocols::HTTP::Status::eRetCode procHTTPClientContent();
 
 };
 
