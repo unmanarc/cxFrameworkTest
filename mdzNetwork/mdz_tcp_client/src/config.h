@@ -1,7 +1,7 @@
 #ifndef PROJECT_VERSION_H
 #define PROJECT_VERSION_H
 
-#define PROJECT_NAME "mdzNetTCPClient"
+#define PROJECT_NAME "mantidsTCPClient"
 #define PROJECT_VER  "1.0.0"
 #define PROJECT_DESCRIPTION  "TCP Client"
 #define PROJECT_VER_MAJOR "1"

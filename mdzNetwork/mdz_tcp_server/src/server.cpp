@@ -6,7 +6,7 @@ using namespace Mantids::Network::Sockets;
 
 bool serverThread(void *, Sockets::Socket_StreamBase * v, const char * remotePair, bool secure)
 {
-    printf("New connection from %s:%d\n", remotePair, v->getRemotePort());
+    printf("Established connection from %s:%d\n", remotePair, v->getRemotePort());
     fflush(stdout);
 
     //////////////////////////////////////////

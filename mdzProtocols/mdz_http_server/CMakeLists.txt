@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 include(GNUInstallDirs)
 
-set(APP_NAME "mdzProtoHTTPServer")
+set(APP_NAME "mantidsHTTPServer")
 set(SVERSION 1.0.0)
 
 project(${APP_NAME})

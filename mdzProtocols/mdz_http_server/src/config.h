@@ -1,7 +1,7 @@
 #ifndef PROJECT_VERSION_H
 #define PROJECT_VERSION_H
 
-#define PROJECT_NAME "mdzProtoHTTPServer"
+#define PROJECT_NAME "mantidsHTTPServer"
 #define PROJECT_VER  "1.0.0"
 #define PROJECT_DESCRIPTION  "HTTP Server"
 #define PROJECT_VER_MAJOR "1"

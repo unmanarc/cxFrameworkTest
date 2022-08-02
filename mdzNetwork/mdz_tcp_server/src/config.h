@@ -1,9 +1,9 @@
 #ifndef PROJECT_VERSION_H
 #define PROJECT_VERSION_H
 
-#define PROJECT_NAME "mdzNetTCPServer"
+#define PROJECT_NAME "mantidsTCPServer"
 #define PROJECT_VER  "1.0.0"
-#define PROJECT_DESCRIPTION  "TCP Server"
+#define PROJECT_DESCRIPTION  "TLS Server"
 #define PROJECT_VER_MAJOR "1"
 #define PROJECT_VER_MINOR "0"
 #define PROJECT_VER_PATCH "0"

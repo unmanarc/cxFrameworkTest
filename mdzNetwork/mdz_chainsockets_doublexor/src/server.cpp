@@ -8,7 +8,7 @@ using namespace Mantids::Network::Sockets;
 
 bool serverThread(void *, Socket_StreamBase * baseClientSocket, const char * remotePair, bool secure)
 {
-    printf("%p New connection from %s:%d, creating chain...\n",baseClientSocket, remotePair, baseClientSocket->getRemotePort());
+    printf("%p Established connection from %s:%d, creating chain...\n",baseClientSocket, remotePair, baseClientSocket->getRemotePort());
 
     // Create the chain here.
     // Two chained xor will return the original value (useful for testing)...

@@ -1,0 +1,129 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            26:79:d0:c6:e0:f7:d9:38:d9:d4:6d:72:c3:7a:f4:be
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=Easy-RSA Mantids Example CA
+        Validity
+            Not Before: Aug  1 22:38:59 2022 GMT
+            Not After : Mar  1 22:38:59 2032 GMT
+        Subject: CN=mytlsserver
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+                Modulus:
+                    00:d3:c5:cd:7b:04:76:40:68:28:db:f6:c5:e2:27:
+                    f3:af:1e:8d:68:b8:05:33:7d:e6:a8:f9:70:21:c8:
+                    14:d3:96:01:ee:0f:c0:93:2a:11:a8:c1:8a:2b:b5:
+                    d8:2c:62:6a:c0:ef:04:63:3b:f1:b6:55:e7:3d:68:
+                    79:80:5d:f6:0f:ae:4f:e6:61:7f:26:ea:70:9c:a1:
+                    ea:fe:c8:8b:f1:e1:48:90:c6:c3:dd:6e:19:67:00:
+                    8c:4b:aa:59:76:2e:49:3f:4e:cb:a6:a4:18:e4:7a:
+                    ab:00:3f:15:24:06:8b:df:5e:13:d5:3f:e9:c6:12:
+                    1d:c4:a4:97:5e:19:3a:47:37:03:a3:d4:41:8c:70:
+                    96:bd:cd:f3:02:a7:cf:be:5c:af:5e:4c:3c:90:9e:
+                    94:69:70:05:8a:8c:b7:a2:de:47:49:ca:7b:d4:ee:
+                    aa:97:46:e9:3f:cf:e3:19:86:19:95:44:1b:bb:eb:
+                    07:43:32:e1:9c:a2:16:89:6d:83:04:15:d0:08:ee:
+                    d3:81:5f:4a:0b:1b:70:7a:93:17:7a:6a:a3:31:3b:
+                    2c:ba:4d:7f:5d:8f:45:8f:5c:8c:5f:91:08:1f:94:
+                    21:e9:03:de:2e:94:33:aa:98:73:b8:34:78:47:de:
+                    07:36:83:03:03:3b:65:e0:d9:2d:c6:3f:63:7a:9d:
+                    ce:61:57:1b:cb:2d:74:53:9c:26:ab:b4:5a:8b:78:
+                    e7:48:44:36:c0:87:1e:54:28:8d:e0:9c:85:13:0e:
+                    db:21:f7:98:6e:0f:35:df:b0:8b:6a:82:db:8d:56:
+                    5f:06:17:50:73:de:5d:ec:88:a4:1d:c2:84:a0:3b:
+                    85:fc:1a:36:ef:1a:b8:56:a5:1c:75:ad:d3:d4:9d:
+                    56:35:3f:26:84:64:4a:f2:c6:22:f2:94:f9:4c:93:
+                    d2:36:50:9f:28:91:d7:aa:d2:87:e0:7a:dd:9b:d9:
+                    5e:f8:db:12:24:17:57:7b:7a:d1:c8:f3:22:21:e2:
+                    5b:d7:ba:69:a7:af:9f:5b:7c:72:f4:79:d2:7e:88:
+                    4f:c2:fe:0e:9a:f1:20:02:6c:8c:60:df:be:58:2c:
+                    49:7d:c1:76:51:92:24:f2:58:ca:cc:81:55:ec:fc:
+                    e0:74:e6:35:70:c1:2a:cf:e5:89:83:e8:65:8e:a3:
+                    f3:05:8c:4c:ff:31:8a:42:fc:a1:fb:6a:c2:f7:00:
+                    16:92:7f:85:9e:da:21:79:e2:0c:08:b0:45:db:04:
+                    2a:96:6d:3f:db:91:48:4a:c3:4e:67:31:38:e7:5f:
+                    52:35:08:c0:18:92:40:0e:05:eb:36:62:99:b9:35:
+                    0d:9b:6a:af:40:58:60:b6:ca:1f:cb:23:6c:fd:f1:
+                    64:4c:f1
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                69:67:84:F2:E3:8C:A9:A3:3D:72:9F:E9:4A:CC:E7:BB:85:3B:7E:FB
+            X509v3 Authority Key Identifier: 
+                keyid:71:5E:40:5E:45:AD:BF:D8:35:8B:7C:D9:32:2F:DD:35:EA:05:D8:35
+                DirName:/CN=Easy-RSA Mantids Example CA
+                serial:45:03:56:C1:6D:8E:18:15:73:6F:F8:A1:83:1C:55:4B:98:FB:18:1D
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:mytlsserver
+    Signature Algorithm: sha256WithRSAEncryption
+         ae:d9:89:f4:75:51:bc:fe:1c:dd:f4:c7:32:d5:f5:99:fa:1e:
+         53:ea:10:ec:b2:69:3a:6a:db:02:e2:44:7a:b6:a8:a5:9f:04:
+         65:4f:91:14:13:49:7d:e6:d1:f8:55:78:f7:b9:c2:4a:b2:bc:
+         33:b4:e6:71:e3:2d:b4:af:cd:cb:95:82:52:41:63:16:b7:5b:
+         1f:51:92:67:2b:7d:7e:54:49:ee:66:5e:6d:ff:c3:d0:8e:ce:
+         e2:4f:71:16:60:c6:26:a1:45:25:1b:e0:be:f4:08:8f:72:d6:
+         69:dc:54:90:68:b0:3b:e2:22:16:8e:62:bb:9c:0b:12:0f:71:
+         6b:de:f7:5e:9f:29:1b:62:29:ac:f7:68:cc:99:e9:b5:b4:89:
+         61:09:25:e5:c9:d6:89:52:66:12:8b:71:f7:90:b7:27:bb:4b:
+         25:91:c3:67:1b:7d:ed:0b:2e:8b:6c:0c:69:04:c1:42:7d:c1:
+         36:55:15:69:63:1d:a8:b9:10:03:76:01:40:fb:f8:20:0c:cc:
+         f4:2c:e6:42:73:e1:3b:ed:1c:98:db:e1:7c:d4:fd:54:fa:8b:
+         be:f0:ed:1b:50:f8:3a:f2:03:14:27:e4:45:4c:e8:d9:29:52:
+         72:b8:48:5f:98:1d:a4:05:9b:71:ec:5b:f6:ce:23:8c:94:c6:
+         12:84:65:3a:28:d2:02:c9:bd:ba:fb:94:05:f1:02:36:09:5f:
+         48:c3:7b:e5:7d:06:fa:03:de:3b:b4:b7:6a:6a:69:d0:1d:9f:
+         29:3e:f4:43:de:6d:4d:38:76:04:32:0d:c4:71:f3:fb:45:a0:
+         26:7d:0e:e4:d8:48:e3:5a:7d:d9:7f:8b:b9:af:98:ba:40:9b:
+         88:97:b8:7b:77:f3:0b:18:3d:d6:fc:5b:ab:08:d2:be:3f:2b:
+         02:4c:2b:60:ee:fa:90:7c:8e:02:73:56:95:99:6d:2e:b1:91:
+         04:23:8d:85:6d:40:31:90:37:b6:f4:3c:20:c2:0e:7a:b0:f9:
+         f8:83:cc:17:66:1e:68:5c:e4:6a:13:2d:48:c0:a9:e1:11:b9:
+         ab:5c:19:6d:bc:d0:a5:e5:03:93:02:d3:bc:cd:80:f1:27:06:
+         9d:6d:c3:67:0e:9d:29:6e:c4:e6:64:bd:a4:aa:09:f0:27:84:
+         5e:57:1c:4e:79:d7:df:af:f1:29:72:1b:0c:04:21:10:8a:41:
+         a3:95:45:74:36:c2:12:fe:49:fd:9d:cd:b6:ba:02:d5:5a:fa:
+         05:47:3e:2e:f9:7f:dc:01:11:da:08:1e:c1:bc:04:10:9f:c6:
+         ae:21:33:b3:95:32:c3:8c:32:0c:83:be:f4:00:55:39:d2:02:
+         37:bb:a3:a6:bc:09:50:3e
+-----BEGIN CERTIFICATE-----
+MIIFkTCCA3mgAwIBAgIQJnnQxuD32TjZ1G1yw3r0vjANBgkqhkiG9w0BAQsFADAm
+MSQwIgYDVQQDDBtFYXN5LVJTQSBNYW50aWRzIEV4YW1wbGUgQ0EwHhcNMjIwODAx
+MjIzODU5WhcNMzIwMzAxMjIzODU5WjAWMRQwEgYDVQQDDAtteXRsc3NlcnZlcjCC
+AiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANPFzXsEdkBoKNv2xeIn868e
+jWi4BTN95qj5cCHIFNOWAe4PwJMqEajBiiu12CxiasDvBGM78bZV5z1oeYBd9g+u
+T+ZhfybqcJyh6v7Ii/HhSJDGw91uGWcAjEuqWXYuST9Oy6akGOR6qwA/FSQGi99e
+E9U/6cYSHcSkl14ZOkc3A6PUQYxwlr3N8wKnz75cr15MPJCelGlwBYqMt6LeR0nK
+e9TuqpdG6T/P4xmGGZVEG7vrB0My4ZyiFoltgwQV0Aju04FfSgsbcHqTF3pqozE7
+LLpNf12PRY9cjF+RCB+UIekD3i6UM6qYc7g0eEfeBzaDAwM7ZeDZLcY/Y3qdzmFX
+G8stdFOcJqu0Wot450hENsCHHlQojeCchRMO2yH3mG4PNd+wi2qC241WXwYXUHPe
+XeyIpB3ChKA7hfwaNu8auFalHHWt09SdVjU/JoRkSvLGIvKU+UyT0jZQnyiR16rS
+h+B63ZvZXvjbEiQXV3t60cjzIiHiW9e6aaevn1t8cvR50n6IT8L+DprxIAJsjGDf
+vlgsSX3BdlGSJPJYysyBVez84HTmNXDBKs/liYPoZY6j8wWMTP8xikL8oftqwvcA
+FpJ/hZ7aIXniDAiwRdsEKpZtP9uRSErDTmcxOOdfUjUIwBiSQA4F6zZimbk1DZtq
+r0BYYLbKH8sjbP3xZEzxAgMBAAGjgcowgccwCQYDVR0TBAIwADAdBgNVHQ4EFgQU
+aWeE8uOMqaM9cp/pSsznu4U7fvswYQYDVR0jBFowWIAUcV5AXkWtv9g1i3zZMi/d
+NeoF2DWhKqQoMCYxJDAiBgNVBAMMG0Vhc3ktUlNBIE1hbnRpZHMgRXhhbXBsZSBD
+QYIURQNWwW2OGBVzb/ihgxxVS5j7GB0wEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYD
+VR0PBAQDAgWgMBYGA1UdEQQPMA2CC215dGxzc2VydmVyMA0GCSqGSIb3DQEBCwUA
+A4ICAQCu2Yn0dVG8/hzd9Mcy1fWZ+h5T6hDssmk6atsC4kR6tqilnwRlT5EUE0l9
+5tH4VXj3ucJKsrwztOZx4y20r83LlYJSQWMWt1sfUZJnK31+VEnuZl5t/8PQjs7i
+T3EWYMYmoUUlG+C+9AiPctZp3FSQaLA74iIWjmK7nAsSD3Fr3vdenykbYims92jM
+mem1tIlhCSXlydaJUmYSi3H3kLcnu0slkcNnG33tCy6LbAxpBMFCfcE2VRVpYx2o
+uRADdgFA+/ggDMz0LOZCc+E77RyY2+F81P1U+ou+8O0bUPg68gMUJ+RFTOjZKVJy
+uEhfmB2kBZtx7Fv2ziOMlMYShGU6KNICyb26+5QF8QI2CV9Iw3vlfQb6A947tLdq
+amnQHZ8pPvRD3m1NOHYEMg3EcfP7RaAmfQ7k2EjjWn3Zf4u5r5i6QJuIl7h7d/ML
+GD3W/FurCNK+PysCTCtg7vqQfI4Cc1aVmW0usZEEI42FbUAxkDe29Dwgwg56sPn4
+g8wXZh5oXORqEy1IwKnhEbmrXBltvNCl5QOTAtO8zYDxJwadbcNnDp0pbsTmZL2k
+qgnwJ4ReVxxOedffr/EpchsMBCEQikGjlUV0NsIS/kn9nc22ugLVWvoFRz4u+X/c
+ARHaCB7BvAQQn8auITOzlTLDjDIMg770AFU50gI3u6OmvAlQPg==
+-----END CERTIFICATE-----

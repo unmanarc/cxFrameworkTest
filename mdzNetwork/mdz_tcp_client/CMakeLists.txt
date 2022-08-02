@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 include(GNUInstallDirs)
 
-set(APP_NAME "mdzNetTCPClient")
+set(APP_NAME "mantidsTCPClient")
 set(SVERSION 1.0.0)
 
 project(${APP_NAME})

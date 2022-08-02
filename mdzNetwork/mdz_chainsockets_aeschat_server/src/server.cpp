@@ -11,7 +11,7 @@ using namespace Mantids::Network::Sockets;
 
 bool serverThread(void *, Sockets::Socket_StreamBase * baseClientSocket, const char * remotePair, bool secure)
 {
-    printf("[+] %p New connection from %s:%d, starting local telnet chat...\n",baseClientSocket, remotePair, baseClientSocket->getRemotePort());
+    printf("[+] %p Established connection from %s:%d, starting local telnet chat...\n",baseClientSocket, remotePair, baseClientSocket->getRemotePort());
 
     /////////////////////////////////////////////////////////////////
     // Create a local managed telnet client.

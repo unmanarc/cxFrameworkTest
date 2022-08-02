@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     printf ("Enter a tcp port: ");
     scanf ("%d",&port);
 
-    // TCP SERVER:
+    // TCP client:
     printf("Starting TCP client...\n");
     Socket_TCP tcpClient;
     if (!tcpClient.connectTo("127.0.0.1", port, 15))
