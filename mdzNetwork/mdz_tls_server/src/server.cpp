@@ -22,7 +22,26 @@ bool serverFailed(void *, Sockets::Socket_StreamBase * v, const char * remotePai
 
 bool serverThread(void *, Sockets::Socket_StreamBase * v, const char * remotePair, bool secure)
 {
-    printf("+++++++++++++ Established connection from %s:%d\n", remotePair, v->getRemotePort());
+
+    Sockets::Socket_TLS * tls = (Sockets::Socket_TLS *)v;
+
+    if (tls->getIsUsingPSK())
+    {
+        printf("+++++++++++++ Incomming connection from %s:%d established using PSK (id=%s, ALG=%s)\n", remotePair, v->getRemotePort(),
+                                            tls->getTLSPeerCN().c_str(),
+                                            tls->getTLSConnectionCipherName().c_str()
+                                        );
+    }
+    else
+    {
+        printf("+++++++++++++ Incomming connection from %s:%d established using PKI (CN=%s, ALG=%s)\n", remotePair, v->getRemotePort(),
+                                            tls->getTLSPeerCN().c_str(),
+                                            tls->getTLSConnectionCipherName().c_str()
+                                        );
+    }
+
+
+
     fflush(stdout);
 
     //////////////////////////////////////////

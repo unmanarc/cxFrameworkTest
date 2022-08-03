@@ -61,15 +61,18 @@ int connectMe(Socket_TLS * tlsClient, uint16_t port)
 
 }
 
-int connect_pki(bool useCerts)
+int connect_pki(bool useCerts, bool useCA)
 {
     Socket_TLS tlsClient;
 
-    // Will validate the server against the CA:
-    if (!tlsClient.keys.loadCAFromPEMMemory( ca_crt, "MYTLSCLIENT" ))
+    if (useCA)
     {
-        printf(" [-] Error setting up the certification authority... :(\n");
-        return -1;
+        // Will validate the server against the CA:
+        if (!tlsClient.keys.loadCAFromPEMMemory( ca_crt, "MYTLSCLIENT" ))
+        {
+            printf(" [-] Error setting up the certification authority... :(\n");
+            return -1;
+        }
     }
 
     if (useCerts)
@@ -106,10 +109,13 @@ int connect_psk(bool goodPSK)
 int main(int argc, char *argv[])
 {
     printf("[+] Connecting using TLS PKI client...\n");
-    printf( " [-] PKI returned with value: %d\n", connect_pki(true));
+    printf( " [-] PKI returned with value: %d\n", connect_pki(true, true));
+
+    printf("[+] Connecting using TLS PKI client without validating the server...\n");
+    printf( " [-] PKI returned with value: %d\n", connect_pki(true, false));
 
     printf("[+] Connecting using TLS PKI without certificates client (must fail)...\n");
-    printf( " [-] PKI returned with value: %d\n", connect_pki(false));
+    printf( " [-] PKI returned with value: %d\n", connect_pki(false, true));
 
     printf("[+] Connecting using TLS PSK client...\n");
     printf( " [-]PSK returned with value: %d\n", connect_psk(true));
